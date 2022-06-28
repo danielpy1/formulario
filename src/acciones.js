@@ -9,8 +9,15 @@ function validar_campo(){
         documento=documento_auxiliar.join("");
         console.log(documento);
         document.getElementById("numero_documento").value=documento;
-    }else if(ultimo==="-"){
-        console.log("- encontrado")
     }
-
+    bandera=documento.indexOf("-");
+    console.log(bandera);
+    if(bandera>=0){
+        if(bandera===0){
+            document.getElementById("numero_documento").value="";
+        }else{
+            documento=documento.slice(0,bandera+2);
+            document.getElementById("numero_documento").value=documento;
+        }
+    }
 }
