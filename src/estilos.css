@@ -1,0 +1,14 @@
+#guardar{
+    width:2rem;
+    height:2rem;
+}
+.row, select{
+    margin-bottom: 1rem;
+}
+h3{
+    margin-top: 1rem;
+    text-align: center;
+}
+#numero_documento{
+    maxlength:5;
+}
